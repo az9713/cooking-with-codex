@@ -2,7 +2,7 @@
   "artifacts": [
     {
       "path": "index.html",
-      "purpose": "Self-contained Windows Codex assembly manual with source-linked evidence and adapted prompts",
+      "purpose": "Self-contained dark Windows Codex manual with source prompts, evidence and adapted prompts",
       "source_dependencies": [
         "video",
         "appshots",
@@ -32,7 +32,7 @@
     },
     {
       "path": "analysis-ir.json",
-      "purpose": "Reusable visual evidence, chapter summaries and adapted prompts",
+      "purpose": "Reusable visual evidence, chapter summaries, source prompts and adapted prompts",
       "source_dependencies": [
         "video"
       ]

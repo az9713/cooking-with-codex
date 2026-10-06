@@ -1,6 +1,7 @@
 """Validate the publishable static package using only the Python standard library."""
 from pathlib import Path
 from html.parser import HTMLParser
+from html import escape
 from urllib.parse import urlsplit, unquote
 import base64
 import hashlib
@@ -19,6 +20,7 @@ class Page(HTMLParser):
         self.images = []
         self.checks = 0
         self.prompts = 0
+        self.source_prompts = 0
         self.csp = ''
         self.in_script = False
         self.script = ''
@@ -33,6 +35,8 @@ class Page(HTMLParser):
             self.checks += 1
         if 'prompt' in (a.get('class') or '').split():
             self.prompts += 1
+        if 'source-prompt' in (a.get('class') or '').split():
+            self.source_prompts += 1
         if tag == 'a':
             self.links.append(a.get('href',''))
         if tag == 'img':
@@ -114,6 +118,13 @@ def main():
     assert '[![Preview' in readme and 'https://az9713.github.io/cooking-with-codex/' in readme
     ir = json.loads((ROOT/'analysis-ir.json').read_text(encoding='utf-8'))
     assert len(ir['visual_samples']) == 24 and len(ir['adapted_prompts']) == 17
+    assert page.source_prompts == len(ir['source_prompts']) == 18
+    assert 'color-scheme:dark' in html and '@media print{:root{color-scheme:light' in html
+    for prompt in ir['source_prompts']:
+        assert prompt['id'] in page.ids and prompt['timestamp'] and prompt['status']
+        assert f't={prompt["seconds"]}s' in html
+        assert prompt['text'] and prompt['context']
+        assert escape(prompt['text']) in html, 'Source prompt text differs from evidence data'
     for artifact in json.loads((ROOT/'artifact-manifest.json').read_text(encoding='utf-8'))['artifacts']:
         assert (ROOT/artifact['path']).is_file()
     print('PASS: publication allowlist, privacy patterns, JPEG metadata, references, anchors, offline dependencies, CSP and expected guide content.')

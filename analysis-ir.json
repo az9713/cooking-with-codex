@@ -381,5 +381,170 @@
     }
   ],
   "excluded_evidence": "Automated scene analysis with incomplete coverage and inconsistent timing",
-  "validation_boundary": "HTML rendering and interactions can be checked; workflows in prompts were not executed for this guide."
+  "validation_boundary": "HTML rendering and interactions can be checked; workflows in prompts were not executed for this guide.",
+  "source_prompts": [
+    {
+      "id": "vp-translator",
+      "title": "Build from an appshot",
+      "timestamp": "07:45",
+      "seconds": 465,
+      "status": "Visible transcription",
+      "text": "Hey, can you just build this?",
+      "context": "Charlie attaches a Slack appshot describing the translation app. The six-word request works because the attachment carries the specification; the build response is not part of the prompt. Spoken at 07:32, visible in the follow-up inspection at 07:45."
+    },
+    {
+      "id": "vp-ikea",
+      "title": "Explain a repository as an IKEA manual",
+      "timestamp": "10:00",
+      "seconds": 600,
+      "status": "Spoken request · normalized",
+      "text": "Can you create a visualization of this repository in the style of an IKEA instruction manual? I want to understand how all of the primitives fit together.",
+      "context": "Charlie supplies the repository context. Wording follows the auto-generated captions; punctuation and fillers are normalized. This is a request for component relationships, assembly and understanding."
+    },
+    {
+      "id": "vp-exports",
+      "title": "Export dashboard data",
+      "timestamp": "22:34",
+      "seconds": 1354,
+      "status": "Spoken request · normalized",
+      "text": "Hey, can you help me download the number of commits for the last seven days as a CSV and the pull request data as a JSON from the start of the month to today? Use computer use and go for it.",
+      "context": "Gabriel supplies the dashboard appshot. A repeated phrase is removed. The demonstration later clarifies 1–29 June 2026 for the pull-request period; “today” belongs to that historical session. Use explicit dates in a fresh run."
+    },
+    {
+      "id": "vp-form",
+      "title": "Turn document questions into a feedback form",
+      "timestamp": "24:44",
+      "seconds": 1484,
+      "status": "Spoken request · normalized",
+      "text": "Hey, can you create this feedback form for me using the questions in the Google Docs? Remember to mark each question as mandatory.",
+      "context": "Gabriel attaches the source document context and selects Chrome. Fillers and the spoken restart are removed. Required status is an explicit acceptance condition."
+    },
+    {
+      "id": "vp-qa",
+      "title": "Build a live audience Q&A site",
+      "timestamp": "29:32",
+      "seconds": 1772,
+      "status": "Visible excerpt",
+      "text": "I want you to build a live audience Q&A site for talks and fireside chats. It should be polished enough to use at a real event and comfortably support 400 people in the same session, including bursts of submissions and votes.\n\nThe admin should be able to configure a session to collect questions, topic suggestions, or both. Participants should get a very simple mobile experience where they can submit something, browse approved submissions, and upvote what they most want discussed. A participant can upvote each submission once and remove that vote later. Rankings and vote counts should update in real time without a refresh.",
+      "context": "These are the first two complete visible paragraphs, transcribed from the screen. Three attached mockups cover stage display, participant mobile view and admin dashboard. The longer prompt continues into moderation, duplicate merging and AI tags/clusters; the displayed final paragraph is clipped, so this is not the full brief. The host says this presentation version was polished from earlier dictation."
+    },
+    {
+      "id": "vp-orchestrator",
+      "title": "Run the Optimal Trees project through milestones",
+      "timestamp": "32:41",
+      "seconds": 1961,
+      "status": "Visible excerpt · tool chips normalized",
+      "text": "Ask any questions that would materially change the architecture or scope. If something is non-blocking, state the assumption and continue.\n\n## How I want you to run the project\n\nUse this main thread as the orchestrator. Its job is to maintain the plan and source of truth, choose the next goal, delegate work, integrate evidence, and keep me informed. Apart from small coordination edits, it should not read all the papers itself, write the package, run the full benchmarks, or perform the reviews. Put substantive research, implementation, testing, benchmarking, documentation, and packaging work into well-scoped sub-agents or separate threads.\n\nAt the start, invoke [Define Goal] and create a GOALS.md file with several milestone-based goals and a clear, verifiable definition of done for each. Keep only one milestone active at a time. When it is complete, blocked, or no longer the right next step, use [Define Goal] again to choose or sharpen the next active goal. Keep GOALS.md honest and current, with concrete evidence for completed milestones and a clear record of what remains.\n\nCreate a simple, clean progress-dashboard.html early in the project and keep it current throughout the run.",
+      "context": "The excerpt begins after a clipped earlier section and ends before a dashboard requirements list. [Define Goal] represents the visible tool chips, not literal typed brackets. The scientific package requirements preceding this orchestration section were not fully recovered. Multi-agent delegation is expressly requested here; it is not a rule for every project."
+    },
+    {
+      "id": "vp-goals",
+      "title": "Create a series of goals",
+      "timestamp": "32:30",
+      "seconds": 1950,
+      "status": "Spoken request · normalized",
+      "text": "Hey, don't create one goal, create a series of goals and put it in a goals markdown file.",
+      "context": "Gabriel describes the instruction behind the milestone workflow. The on-screen file is GOALS.md. The persistent series of milestones is distinct from the single currently active goal."
+    },
+    {
+      "id": "vp-remote",
+      "title": "Ask a local thread to test remote work",
+      "timestamp": "33:37",
+      "seconds": 2017,
+      "status": "Spoken request · normalized",
+      "text": "Hey, you can spawn a local thread on my machine and use the Chrome extension to then inspect it.",
+      "context": "Gabriel describes remote-to-local browser QA. The screen shows a delegated thread, but this short instruction comes from the narration. Local browser access depends on the available client and installed tools."
+    },
+    {
+      "id": "vp-status",
+      "title": "Send a concise progress report",
+      "timestamp": "34:28",
+      "seconds": 2068,
+      "status": "Spoken request · normalized",
+      "text": "Hey, reply to this thread and give me a summary of what's done, what's not yet done, and are there any blockers?",
+      "context": "Gabriel describes using a Slack plugin and a named thread. Private thread/channel identifiers are omitted. This historical example does not authorize messages to any destination in a new run."
+    },
+    {
+      "id": "vp-side",
+      "title": "Ask what happened and what is next",
+      "timestamp": "35:48",
+      "seconds": 2148,
+      "status": "Spoken request · normalized",
+      "text": "Hey, what's going on? Can you list what you've done so far, maybe in the last hour? What do you plan to do next? Is there anything I can do to unblock you?",
+      "context": "Gabriel dictates this in a side conversation. The hosts advise sending durable decisions back to the main thread because side conversations can become stale."
+    },
+    {
+      "id": "vp-local-project",
+      "title": "Choose the correct local QA project",
+      "timestamp": "36:38",
+      "seconds": 2198,
+      "status": "Screen wording read aloud · normalized",
+      "text": "Test spawning a local thread in the local FormBuilder project. If it succeeds, make that the default location for all future local threads, especially for Chrome or end-to-end testing.",
+      "context": "The host reads the visible request aloud. Punctuation and a spoken restart are normalized; this is not an independently complete screen transcription. It tests the bridge before relying on it for QA."
+    },
+    {
+      "id": "vp-critique",
+      "title": "Steer a weak UI result",
+      "timestamp": "37:41",
+      "seconds": 2261,
+      "status": "Spoken report of a sent request",
+      "text": "not very good",
+      "context": "Gabriel reports sending this short criticism with a screenshot. The main agent agrees and messages an existing QA subagent. This is an example of screenshot context plus mid-task steering; specific defects and acceptance checks make a stronger reusable critique."
+    },
+    {
+      "id": "vp-triage",
+      "title": "Read and classify channel feedback every half hour",
+      "timestamp": "54:20",
+      "seconds": 3260,
+      "status": "Visible excerpt",
+      "text": "Every half an hour, can you just like look at the comments and suggestions in this channel and reply to them? I think there'll be like a few categories. There's one category where it's like compliments, there's one category where it's a bug report, there's one category where it's a feature request, so forth.",
+      "context": "The complete visible sentences are transcribed; the bubble ends with “Then we just like...” and is truncated. The attached channel appshot is essential context and is omitted here for privacy. A recurring check begins, but the complete eventual feedback-to-PR pipeline is not established on screen."
+    },
+    {
+      "id": "vp-fix-feedback",
+      "title": "Steer feedback handling into a worktree and PR",
+      "timestamp": "54:08",
+      "seconds": 3248,
+      "status": "Spoken request · normalized and redacted",
+      "text": "If it's a bug fix or feature request, can you also spin a new thread in a worktree and actually address that, then open a PR and request [reviewer] to review it? Ask [reviewer] to approve it within 24 hours; if not, keep reminding them.",
+      "context": "Fillers are removed and the named recipient is replaced with [reviewer]. Gabriel calls this a comical example. The request is issued while the earlier automation is still working; it is not evidence that every downstream action completed. Supply explicit recipients and sensible reminder limits before adapting it."
+    },
+    {
+      "id": "vp-pacing",
+      "title": "Monitor presentation pacing",
+      "timestamp": "55:40",
+      "seconds": 3340,
+      "status": "Reconstructed intent · narrated existing automation",
+      "text": "Run an automation every five minutes, taking a screenshot of the Google Chrome presentation, and estimate whether we are going to overrun.",
+      "context": "This is a concise reconstruction of Gabriel’s explanation, not an exact initial prompt. A later checkpoint is visible. The actual presentation deadline and schedule belong to the source session; specify yours in a new run."
+    },
+    {
+      "id": "vp-weekly",
+      "title": "Review skills and project instructions weekly",
+      "timestamp": "56:25",
+      "seconds": 3385,
+      "status": "Reconstructed intent · proposal",
+      "text": "Every Friday, review my conversation threads for skills that could be improved, additions to AGENTS.md, and unused skills that could be removed.",
+      "context": "Gabriel proposes this workflow; it is not demonstrated end-to-end. This text reconstructs the idea rather than quoting a sent prompt. Review suggested removals before changing a working collection."
+    },
+    {
+      "id": "vp-email",
+      "title": "Learn from the reply actually sent",
+      "timestamp": "56:43",
+      "seconds": 3403,
+      "status": "Reconstructed intent · proposal",
+      "text": "Compare the drafted email reply with the eventual reply I sent, treating the sent reply as ground truth for my editing preferences. Update a Markdown file with best practices and tips for future drafts.",
+      "context": "A proposed second automation, reconstructed from narration. “Ground truth” here concerns the user’s preferred final wording; it does not establish the factual correctness of an email. The video does not show this feedback loop being validated."
+    },
+    {
+      "id": "vp-daily",
+      "title": "Ask about a workstream from accumulated notes",
+      "timestamp": "57:58",
+      "seconds": 3478,
+      "status": "Spoken example · normalized",
+      "text": "Hey, what's going on with the latest [workstream]?",
+      "context": "Charlie describes a heartbeat that reads incoming updates and refreshes local Obsidian notes. The example phrase is incomplete in narration; [workstream] is a supplied placeholder, so this is not a complete verbatim prompt. The useful mechanism is maintaining context before asking a short question."
+    }
+  ],
+  "source_prompt_coverage": "18 recoverable visual or spoken requests and explicitly marked reconstructions; not all original prompt bodies are visible. Four entries transcribe complete visible wording or bounded excerpts; all other labels state normalization or reconstruction."
 }

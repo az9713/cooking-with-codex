@@ -16,12 +16,13 @@ The guide combines the full available auto-generated English transcript (0:18–
 
 - Six assemblies: supply context, build and inspect, take action, manage complexity, work over time, and embed the harness.
 - Both hosts’ overlapping approaches, adapted to Windows rather than copied from macOS demos.
-- Seventeen original reusable prompts, with copy buttons and a manual-copy fallback.
+- Eighteen source-linked prompt entries: visible transcriptions/excerpts, normalized spoken requests, and clearly marked reconstructions or proposals.
+- Seventeen original Windows-adapted prompts, with copy buttons and a manual-copy fallback.
 - A scientific replication capstone, milestone contracts and proficiency checks.
 - A 24-entry visual evidence ledger, full-video navigation and links to official product documentation.
-- Local checklist persistence where browser storage is available, a responsive layout and a print view.
+- Dark mode by default, local checklist persistence, a responsive layout and a light print view.
 
-Prompts and diagrams are instructional adaptations, not verbatim host prompts. Reading the guide alone does not establish expert proficiency; its practice checks require observable results.
+The source-prompt section labels provenance and clipped text explicitly; it is not a complete dump of every original request. The separate reusable prompt kit and diagrams are instructional adaptations, not verbatim host prompts. Reading the guide alone does not establish expert proficiency; its practice checks require observable results.
 
 ## Use locally
 
@@ -42,7 +43,7 @@ Then open `http://127.0.0.1:8000/`.
 | `index.html` | Self-contained interactive manual and GitHub Pages entry point |
 | `preview.jpg` | Clickable README preview of the guide |
 | `source-manifest.json` | Public source references, dates and coverage limits |
-| `analysis-ir.json` | Timestamped observations, chapter summaries and adapted prompts |
+| `analysis-ir.json` | Timestamped observations, chapter summaries, source prompts and adapted prompts |
 | `artifact-manifest.json` | Deliverable inventory and source dependencies |
 | `check_public.py` | Runnable package, privacy and link checks |
 | `.nojekyll` | Serve the static files without a Jekyll build |

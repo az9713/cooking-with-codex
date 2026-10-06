@@ -80,6 +80,8 @@ def check_jpeg(data):
 def main():
     files = {x.name for x in ROOT.iterdir() if x.is_file()}
     assert files == ALLOWED, f'Unexpected or missing publication files: {files ^ ALLOWED}'
+    for name in files - {'preview.jpg'}:
+        assert b'\r\n' not in (ROOT/name).read_bytes(), f'Use LF line endings: {name}'
     html = (ROOT/'index.html').read_text(encoding='utf-8')
     page = Page()
     page.feed(html)

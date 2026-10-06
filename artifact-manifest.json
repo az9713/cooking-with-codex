@@ -1,0 +1,62 @@
+{
+  "artifacts": [
+    {
+      "path": "index.html",
+      "purpose": "Self-contained Windows Codex assembly manual with source-linked evidence and adapted prompts",
+      "source_dependencies": [
+        "video",
+        "appshots",
+        "goals",
+        "worktrees",
+        "hooks",
+        "skills",
+        "automation",
+        "server",
+        "computer"
+      ]
+    },
+    {
+      "path": "source-manifest.json",
+      "purpose": "Source provenance and coverage",
+      "source_dependencies": [
+        "video",
+        "appshots",
+        "goals",
+        "worktrees",
+        "hooks",
+        "skills",
+        "automation",
+        "server",
+        "computer"
+      ]
+    },
+    {
+      "path": "analysis-ir.json",
+      "purpose": "Reusable visual evidence, chapter summaries and adapted prompts",
+      "source_dependencies": [
+        "video"
+      ]
+    },
+    {
+      "path": "preview.jpg",
+      "purpose": "Verified desktop rendering of the assembly manual",
+      "source_dependencies": [
+        "video"
+      ]
+    },
+    {
+      "path": "README.md",
+      "purpose": "Project overview, source reference, live site and privacy boundaries",
+      "source_dependencies": [
+        "video"
+      ]
+    },
+    {
+      "path": "check_public.py",
+      "purpose": "Runnable public package validation",
+      "source_dependencies": [
+        "video"
+      ]
+    }
+  ]
+}

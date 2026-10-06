@@ -1,0 +1,77 @@
+{
+  "retrieved_on": "2026-10-06",
+  "sources": [
+    {
+      "id": "video",
+      "input": "https://www.youtube.com/watch?v=FwiS44-xyYw&t=25s",
+      "title": "Cooking with Codex — Charlie Guo & Gabriel Chua, OpenAI",
+      "publisher": "AI Engineer",
+      "status": "full_available_transcript_and_sampled_visuals",
+      "coverage": {
+        "duration": "1:07:23",
+        "transcript": "auto-generated English, 0:18–1:07:03",
+        "saved_visual_samples": 24,
+        "continuous_visual_pass": false,
+        "independent_full_audio_pass": false
+      },
+      "upload_date": "2026-10-05",
+      "demonstration_date_inference": "2026-06-29 from narration and visible Monday 29 June clocks"
+    },
+    {
+      "id": "appshots",
+      "input": "https://learn.chatgpt.com/docs/appshots",
+      "title": "Appshots on Windows",
+      "status": "consulted_official_documentation",
+      "coverage": "relevant documented behavior, not all product capabilities"
+    },
+    {
+      "id": "goals",
+      "input": "https://learn.chatgpt.com/docs/long-running-work",
+      "title": "Long-running work and goals",
+      "status": "consulted_official_documentation",
+      "coverage": "relevant documented behavior, not all product capabilities"
+    },
+    {
+      "id": "worktrees",
+      "input": "https://learn.chatgpt.com/docs/environments/git-worktrees",
+      "title": "Git worktrees",
+      "status": "consulted_official_documentation",
+      "coverage": "relevant documented behavior, not all product capabilities"
+    },
+    {
+      "id": "hooks",
+      "input": "https://learn.chatgpt.com/docs/hooks",
+      "title": "Hooks and lifecycle events",
+      "status": "consulted_official_documentation",
+      "coverage": "relevant documented behavior, not all product capabilities"
+    },
+    {
+      "id": "skills",
+      "input": "https://learn.chatgpt.com/docs/build-skills",
+      "title": "Build reusable skills",
+      "status": "consulted_official_documentation",
+      "coverage": "relevant documented behavior, not all product capabilities"
+    },
+    {
+      "id": "automation",
+      "input": "https://learn.chatgpt.com/docs/automations?surface=app",
+      "title": "Automations",
+      "status": "consulted_official_documentation",
+      "coverage": "relevant documented behavior, not all product capabilities"
+    },
+    {
+      "id": "server",
+      "input": "https://learn.chatgpt.com/docs/app-server",
+      "title": "Codex App Server",
+      "status": "consulted_official_documentation",
+      "coverage": "relevant documented behavior, not all product capabilities"
+    },
+    {
+      "id": "computer",
+      "input": "https://learn.chatgpt.com/docs/computer-use",
+      "title": "Computer use and Windows behavior",
+      "status": "consulted_official_documentation",
+      "coverage": "relevant documented behavior, not all product capabilities"
+    }
+  ]
+}

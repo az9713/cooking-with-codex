@@ -1,0 +1,385 @@
+{
+  "schema": "codex-workshop-evidence-v1",
+  "source_id": "video",
+  "visual_samples": [
+    {
+      "timestamp": "06:14",
+      "subject": "Six-step slide",
+      "observation": "A sequence of context, building, action, complex collaboration, work over time and embedding is visible.",
+      "interpretation_or_limit": "The manual follows this progression; it is not a list of unrelated features."
+    },
+    {
+      "timestamp": "12:38",
+      "subject": "Plugin catalog",
+      "observation": "Slack search shows entries with different actions, including installation and use in chat.",
+      "interpretation_or_limit": "Catalog presence is not evidence that a connector is installed, connected or authorized."
+    },
+    {
+      "timestamp": "13:40",
+      "subject": "Translator UI",
+      "observation": "German is selected; source and translated panes, level meter, mute and stage controls are visible.",
+      "interpretation_or_limit": "A live UI exists. The demonstration does not establish translation accuracy, latency or reliable audio routing."
+    },
+    {
+      "timestamp": "16:35",
+      "subject": "Personalization settings",
+      "observation": "Custom instructions and experimental memory controls are separate settings.",
+      "interpretation_or_limit": "Keep preferences distinct from project evidence. Demo defaults and labels can change."
+    },
+    {
+      "timestamp": "19:28",
+      "subject": "Context recap slide",
+      "observation": "Plugins, dictation, appshots, instructions and memory are presented together.",
+      "interpretation_or_limit": "Context comes from several channels; screenshots alone are not the whole context package."
+    },
+    {
+      "timestamp": "20:45",
+      "subject": "Actual IKEA artifact",
+      "observation": "A cream-and-black SVG has a parts inventory and four numbered assembly panels. Agent, Runner, attachments and results are diagrammed.",
+      "interpretation_or_limit": "The style means component inventory, connection arrows and assembly order. The visible artifact is SVG; an image-generation invocation is not shown."
+    },
+    {
+      "timestamp": "23:04",
+      "subject": "Dashboard workflow",
+      "observation": "A chat asks for exports while the existing dashboard is being operated. This saved frame is low resolution.",
+      "interpretation_or_limit": "Use the transcript for requested date ranges; do not infer fine-grained values from this frame."
+    },
+    {
+      "timestamp": "25:42",
+      "subject": "Google Forms beside Codex",
+      "observation": "The chat reports four multiple-choice and three open-ended questions, all required; the real Google Forms editor is visible.",
+      "interpretation_or_limit": "Structured transfer into a real service is shown. The frame does not establish final publication or complete response validation."
+    },
+    {
+      "timestamp": "26:44",
+      "subject": "Tool-selection table",
+      "observation": "The slide distinguishes native application control, signed-in Chrome and the isolated browser.",
+      "interpretation_or_limit": "Session state determines the right surface. Do not assume that the isolated browser has your Chrome cookies."
+    },
+    {
+      "timestamp": "29:32",
+      "subject": "Long Q&A project",
+      "observation": "Three role-specific mockups and a goal running for about fifteen and a half hours are visible.",
+      "interpretation_or_limit": "The prompt encodes product behavior: audience voting, moderation and a stage display. Elapsed time is not completion evidence."
+    },
+    {
+      "timestamp": "32:41",
+      "subject": "Research orchestration prompt",
+      "observation": "One active milestone, GOALS.md and a progress dashboard are explicit; the orchestrator plans, delegates and integrates evidence.",
+      "interpretation_or_limit": "Research needs milestone boundaries, durable status and clear worker ownership."
+    },
+    {
+      "timestamp": "33:28",
+      "subject": "Goal audit",
+      "observation": "The review separates heuristic best-found local search from certified optimality and scopes the next Rust milestone.",
+      "interpretation_or_limit": "This distinction is essential for mathematical software. A library name or success message does not prove an optimization guarantee."
+    },
+    {
+      "timestamp": "38:21",
+      "subject": "Reused QA worker",
+      "observation": "A screenshot is routed back to an existing QA agent; a visible sentinel string is used as a probe.",
+      "interpretation_or_limit": "Reuse a worker with relevant context. A sentinel checks visibility, not the entire quality of the app."
+    },
+    {
+      "timestamp": "39:06",
+      "subject": "Workers dashboard",
+      "observation": "Entries include owner, scope, status and expandable work history.",
+      "interpretation_or_limit": "Actionable status describes evidence and blockers; a generic percentage would conceal them."
+    },
+    {
+      "timestamp": "40:04",
+      "subject": "Authentication blocker",
+      "observation": "Deployment credentials and existing project choices block parts of the work.",
+      "interpretation_or_limit": "Do independent work first, then request the smallest specific unblock. The frame does not prove deployment."
+    },
+    {
+      "timestamp": "41:41",
+      "subject": "Form-builder preview",
+      "observation": "Builder, preview, sharing and responses tabs are visible, alongside a local-preview user badge.",
+      "interpretation_or_limit": "A local user badge is not proof that production workspace authentication is working."
+    },
+    {
+      "timestamp": "46:16",
+      "subject": "Custom subagent file",
+      "observation": "A .codex/agents/docs-researcher.toml file shows model choice, reasoning, read-only scope and documentation instructions.",
+      "interpretation_or_limit": "The screen resolves a caption ambiguity about the configuration filename. Verify the installed version’s schema before reusing it."
+    },
+    {
+      "timestamp": "50:04",
+      "subject": "Hook configuration",
+      "observation": "A Stop lifecycle hook runs a repository Python tidy script with a 20-second timeout.",
+      "interpretation_or_limit": "The repeated step is deterministic code. This macOS-oriented shell command should not be pasted unchanged into Windows."
+    },
+    {
+      "timestamp": "51:47",
+      "subject": "Provisioning monitor",
+      "observation": "A server becomes ready and the chat records removal of the boot-check heartbeat.",
+      "interpretation_or_limit": "Give monitors a completion condition and stop them after success; do not accumulate orphan checks."
+    },
+    {
+      "timestamp": "54:20",
+      "subject": "Feedback workflow setup",
+      "observation": "Slack context is attached while new dictated instructions steer an active task.",
+      "interpretation_or_limit": "Mid-task steering is shown. A complete feedback-to-fix-to-reviewed-PR pipeline is not demonstrated here."
+    },
+    {
+      "timestamp": "56:09",
+      "subject": "Presentation monitor",
+      "observation": "Slide position and heuristic overrun estimates are reported; a 300-second sleep is visible.",
+      "interpretation_or_limit": "The estimate is uncalibrated. A sleeping loop and a scheduler-managed heartbeat are different mechanisms."
+    },
+    {
+      "timestamp": "60:45",
+      "subject": "Retrodex client",
+      "observation": "A custom chat UI exposes model, reasoning, workspace and run controls; a Hello turn is running.",
+      "interpretation_or_limit": "A custom client is visible. This frame does not establish robust cross-client synchronization or production readiness."
+    },
+    {
+      "timestamp": "63:54",
+      "subject": "Closing questions",
+      "observation": "The slide asks about delegation, context, permissions, complex work and recurring tasks.",
+      "interpretation_or_limit": "The synthesis is an operating loop: supply evidence, execute, inspect, improve and repeat."
+    },
+    {
+      "timestamp": "66:30",
+      "subject": "Closing event material",
+      "observation": "Credit and hackathon information belongs to the event’s closing segment.",
+      "interpretation_or_limit": "Do not treat the historical event offer as currently available."
+    }
+  ],
+  "chapters": [
+    {
+      "timestamp": "0:00",
+      "subject": "Examples and ambitions",
+      "summary": "Range of projects; examples are motivation, not controlled performance benchmarks."
+    },
+    {
+      "timestamp": "5:19",
+      "subject": "Six-part operating method",
+      "summary": "Context → build → action → complex collaboration → repeated work → embedded interface."
+    },
+    {
+      "timestamp": "6:36",
+      "subject": "Build a translator from context",
+      "summary": "Slack conversation, appshot and dictation supply the product brief."
+    },
+    {
+      "timestamp": "9:17",
+      "subject": "Remote work and the IKEA diagram",
+      "summary": "Phone as a control surface; repository understanding becomes a visual assembly guide."
+    },
+    {
+      "timestamp": "11:05",
+      "subject": "Plugins and skills",
+      "summary": "Bring domain instructions and tools into the task; discover what is actually available."
+    },
+    {
+      "timestamp": "13:04",
+      "subject": "Live translation test",
+      "summary": "Generated macOS app is exercised with live input; audio routing causes friction."
+    },
+    {
+      "timestamp": "15:32",
+      "subject": "Memory and personalization",
+      "summary": "Preferences, instructions and captured context play different roles."
+    },
+    {
+      "timestamp": "19:28",
+      "subject": "Sites, review and visual artifacts",
+      "summary": "Shareable output, code review and the generated SVG manual."
+    },
+    {
+      "timestamp": "21:27",
+      "subject": "Dashboard exports",
+      "summary": "Use the existing application to export specific CSV and JSON slices."
+    },
+    {
+      "timestamp": "24:06",
+      "subject": "Google feedback form",
+      "summary": "Transfer questions from a document into a real browser-hosted form."
+    },
+    {
+      "timestamp": "26:19",
+      "subject": "Choose the browser surface",
+      "summary": "Isolated browser, signed-in Chrome and native applications have different uses."
+    },
+    {
+      "timestamp": "28:45",
+      "subject": "Projects that take hours",
+      "summary": "Q&A app, form builder and research library; project constraints matter."
+    },
+    {
+      "timestamp": "32:16",
+      "subject": "Goals, audits and handoffs",
+      "summary": "Durable milestone files, scoped review and coordination between execution hosts."
+    },
+    {
+      "timestamp": "37:18",
+      "subject": "Subagents and dashboards",
+      "summary": "Reuse a QA worker; expose ownership and actionable status."
+    },
+    {
+      "timestamp": "42:23",
+      "subject": "Compaction and finish criteria",
+      "summary": "Keep state durable; define what counts as completion."
+    },
+    {
+      "timestamp": "45:01",
+      "subject": "Subagents versus visible chats",
+      "summary": "Choose between bounded internal delegation and separately steerable work."
+    },
+    {
+      "timestamp": "47:57",
+      "subject": "Hooks",
+      "summary": "Deterministic lifecycle commands, illustrated by a repository tidy command."
+    },
+    {
+      "timestamp": "50:24",
+      "subject": "Provisioning with a heartbeat",
+      "summary": "Check an external process over time, then remove the completed monitor."
+    },
+    {
+      "timestamp": "52:37",
+      "subject": "Slack-driven development",
+      "summary": "Proposed feedback classification, fixes and review handoffs."
+    },
+    {
+      "timestamp": "58:37",
+      "subject": "App Server and Retrodex",
+      "summary": "Custom native client around the Codex harness; minimal live interaction."
+    },
+    {
+      "timestamp": "62:13",
+      "subject": "From tasks to a software factory",
+      "summary": "Accumulate useful context, verified workflows and feedback loops."
+    },
+    {
+      "timestamp": "66:12",
+      "subject": "Event credits",
+      "summary": "Historical hackathon offer; current eligibility was not verified."
+    }
+  ],
+  "adapted_prompts": [
+    {
+      "id": "p-context",
+      "title": "Context interview",
+      "use": "Use before a new project; attach the actual files or appshot.",
+      "prompt": "I want to build [outcome] in my Windows Codex workspace. The intended user is [who], and the important constraints are [constraints]. Inspect the available files, tools and attached context first. Ask only questions whose answers would materially change the design; continue independent work while waiting. Give me a small first milestone with observable acceptance criteria, then implement it. Use a browser in the background for inspection; do not put it in full screen.",
+      "attribution": "original adaptation, not verbatim"
+    },
+    {
+      "id": "p-brief",
+      "title": "Turn a screen into a brief",
+      "use": "Use an appshot plus your spoken or typed intent.",
+      "prompt": "From this attached appshot and my notes, recover the intended workflow, data inputs, visible controls and missing decisions. Separate what you can actually see from inference. Build the smallest useful version for Windows. Before calling it complete, run it and exercise the main user path. Return the artifact, the check result and any remaining limitation.",
+      "attribution": "original adaptation, not verbatim"
+    },
+    {
+      "id": "p-manual",
+      "title": "Make a repository assembly manual",
+      "use": "The closest replication of the video’s IKEA example.",
+      "prompt": "Inspect this repository and its current documentation. Produce one self-contained HTML assembly manual in an IKEA instruction style: monochrome line diagrams, a parts list, numbered panels, connection arrows and a final assembled view. Explain the actual entry points, data flow, optional components and failure boundaries. Link each technical claim to the relevant file or official documentation. Mark inferred relationships. Check the diagrams against the implementation and render the HTML. Do not add features to the repository.",
+      "attribution": "original adaptation, not verbatim"
+    },
+    {
+      "id": "p-browser",
+      "title": "Choose and verify the action surface",
+      "use": "Useful for browser QA and dashboard work.",
+      "prompt": "Task: [specific browser outcome]. First identify which available tool can do it and where the relevant session is signed in. Prefer structured tools when available; otherwise use the isolated browser for local/public content or my signed-in Chrome for the named service. Keep inspection in the background. Verify the final visible state and save evidence. If the task requires foreground Windows desktop control, explain the concrete need before starting it.",
+      "attribution": "original adaptation, not verbatim"
+    },
+    {
+      "id": "p-export",
+      "title": "Export data with a contract",
+      "use": "Make the time window and schema explicit.",
+      "prompt": "From [dashboard], export [metric] as CSV for [start inclusive] through [end exclusive], using timezone [zone], and [other metric] as JSON for [period]. Preserve the source’s filters and document them. Verify headers, row counts, date boundaries, units and totals against the visible source. Save both outputs locally with an export note. Report missing data rather than filling it in.",
+      "attribution": "original adaptation, not verbatim"
+    },
+    {
+      "id": "p-form",
+      "title": "Document → draft form",
+      "use": "Adapt the demonstrated transfer to your own questions.",
+      "prompt": "Read [named document] and create a draft form in [named service] using its questions. Preserve wording, choices, order and required status. Check the editor and respondent preview, including invalid submission and one valid test response if a disposable test is available. Report the resulting draft link and discrepancies. Keep it a draft; publication is outside this task.",
+      "attribution": "original adaptation, not verbatim"
+    },
+    {
+      "id": "p-goal",
+      "title": "Set a verifiable goal",
+      "use": "Invoke /goal in a supported client, then supply this contract.",
+      "prompt": "Goal: [observable outcome]. Constraints: [scope, budget, platforms, prohibited changes]. Keep one active milestone and durable GOALS.md notes covering acceptance criteria, evidence, decisions, next actions and blockers. Complete the milestone only when its checks pass. If workers help, give each an independent scope and integrate their evidence. After a milestone, reconcile the documentation with the actual code and choose the next bounded milestone.",
+      "attribution": "original adaptation, not verbatim"
+    },
+    {
+      "id": "p-science",
+      "title": "Replicate a paper rigorously",
+      "use": "Designed for a research workbench, not a claim of automatic discovery.",
+      "prompt": "Reproduce [specific claim or algorithm] from [paper/version/pages] on [dataset or small synthetic instances]. First record assumptions, objective, constraints, units, conventions and the exact claim. Establish a simple reference implementation and independent small-instance oracle where feasible. Compare outputs with tolerances justified by the method. Separate implementation correctness, empirical reproduction and theoretical guarantees. Preserve seeds, dependencies, commands and failures. Do not call a heuristic result globally optimal without a valid certificate or proof.",
+      "attribution": "original adaptation, not verbatim"
+    },
+    {
+      "id": "p-worker",
+      "title": "Delegate one bounded job",
+      "use": "Use only when the main task actually benefits from a subagent.",
+      "prompt": "Use a subagent for [independent task] with ownership of [files/responsibility]. Acceptance evidence: [check or artifact]. It is not alone in the codebase: it must preserve others’ edits and accommodate concurrent work. Give it the relevant context, an explicit stopping condition and the facts it must report. Keep integration and final verification with the main agent. Reuse an existing suitable worker before creating another.",
+      "attribution": "original adaptation, not verbatim"
+    },
+    {
+      "id": "p-chats",
+      "title": "Coordinate visible chats",
+      "use": "This explicitly authorizes the named coordination.",
+      "prompt": "Coordinate these existing Codex chats: [exact titles or IDs]. You may send each the scoped instructions needed for [specific project purpose]. Assign non-overlapping ownership, use worktrees where independent code changes require isolation, and maintain a short dashboard of owner, scope, last evidence, next action and blockers. Report integrated results after checking them; an idle worker alone is not proof of success.",
+      "attribution": "original adaptation, not verbatim"
+    },
+    {
+      "id": "p-side",
+      "title": "Interrogate progress",
+      "use": "Use a supported side conversation, or ask in the main chat.",
+      "prompt": "What changed in the last working interval? What evidence supports the current status? What is on the critical path, what can proceed independently, and what exact input would unblock you? Answer concisely, then continue the authorized work. Put any durable decision back into the project’s main notes.",
+      "attribution": "original adaptation, not verbatim"
+    },
+    {
+      "id": "p-review",
+      "title": "Audit before accepting completion",
+      "use": "Ask for a fresh review perspective when justified.",
+      "prompt": "Audit this milestone against its acceptance criteria and the actual artifact. Look for contradictions between implementation, tests, dashboard, README and reported guarantees. Exercise the important failure paths. For every finding give severity, concrete evidence and the smallest fix. After fixes, rerun the affected checks and state exactly what remains unverified.",
+      "attribution": "original adaptation, not verbatim"
+    },
+    {
+      "id": "p-hook",
+      "title": "Make one repeated check deterministic",
+      "use": "No need for an elaborate hook framework.",
+      "prompt": "The repeated step is [specific repository check]. Inspect my installed Codex version and existing hook configuration. Implement the smallest Windows-compatible deterministic command, with an appropriate timeout and useful failure output. Run it manually first. Then configure the appropriate lifecycle hook without overwriting unrelated hooks. Verify when it runs and demonstrate its failure and success behavior.",
+      "attribution": "original adaptation, not verbatim"
+    },
+    {
+      "id": "p-heartbeat",
+      "title": "Monitor this task to completion",
+      "use": "Use the app’s automation tool; do not emulate it with raw cron text.",
+      "prompt": "Monitor [named ongoing task/process] every [interval] until [observable completion or stop condition]. Continue only work already authorized for this task. Stay quiet while state is unchanged or non-actionable; notify on meaningful progress, completion, failure or a specific required input. Record evidence of completion and remove or disable the monitor when done. Keep external messages, spending and access changes within my explicitly stated scope.",
+      "attribution": "original adaptation, not verbatim"
+    },
+    {
+      "id": "p-feedback",
+      "title": "Build a bounded feedback loop",
+      "use": "Start with triage; expand only after it works.",
+      "prompt": "For [named feedback source] and [named repository], create a first pass that reads new items, deduplicates them and classifies bug, feature request, question or compliment. For actionable bugs, reproduce the issue and prepare a scoped fix in an isolated worktree with relevant checks and a draft PR. You may message [specific recipient/channel] only for [specific purpose], if supplied here. Keep a ledger so repeated runs do not duplicate issues or PRs. Stop at the defined scope boundary and report uncertain cases.",
+      "attribution": "original adaptation, not verbatim"
+    },
+    {
+      "id": "p-skill",
+      "title": "Save the workflow that actually worked",
+      "use": "Run after a successful manual task.",
+      "prompt": "Extract a reusable skill from this completed workflow. Include when to use it, required inputs, available tools, steps, evidence checks, known failure modes and the scope of authorized side effects. Generalize the procedure without retaining private data or project-specific credentials. Prefer instructions; add a script only for a deterministic step that benefits from one. Validate the skill and exercise it on one new example.",
+      "attribution": "original adaptation, not verbatim"
+    },
+    {
+      "id": "p-server",
+      "title": "Build a minimal App Server client",
+      "use": "An optional developer track after the operator loop is reliable.",
+      "prompt": "Build a minimal Windows-compatible client for the Codex App Server version installed here. Generate or inspect that version’s protocol schema first. Demonstrate initialization, thread creation, one turn, streamed events, interruption and reconnection or resume where supported. Handle approval requests explicitly and keep the listener local. Use a simple interface; add custom styling after the lifecycle works. Show one runnable end-to-end check and document unsupported behavior.",
+      "attribution": "original adaptation, not verbatim"
+    }
+  ],
+  "excluded_evidence": "Automated scene analysis with incomplete coverage and inconsistent timing",
+  "validation_boundary": "HTML rendering and interactions can be checked; workflows in prompts were not executed for this guide."
+}
